@@ -16,7 +16,6 @@ footer {
     display: flex;
     justify-content: center;
     height: 100px;
-    line-height: 60px;
 }
 h1, h2, p, li {
     font-family: 'Righteous', cursive;
