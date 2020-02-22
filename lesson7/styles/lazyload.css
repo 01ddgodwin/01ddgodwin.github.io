@@ -1,0 +1,8 @@
+.pictures {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+img {
+    grid-column: 1;
+}

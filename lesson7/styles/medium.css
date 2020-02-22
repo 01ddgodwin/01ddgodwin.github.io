@@ -1,0 +1,46 @@
+@media only screen and (min-width: 32.5em) {
+    .flex {
+        flex-direction: row;
+    }
+
+    div .audience {
+        margin-left: 450px;
+    }
+    
+    .navigation {
+		display: flex;
+	}
+	.navigation li {
+		display: block; /* needed because of state in small view */
+		flex: 1 1 100%;
+	}
+	.navigation li a {
+		text-align: center;
+	}
+	
+	.navigation li:first-child {
+		display: none;
+    }
+    .logo {
+        width: 100px;
+        float: left;
+        margin-top: -110px;
+        margin-left: 50px;
+    }
+    h1, h2 {
+        font-size: 30px;
+    }
+
+    #five-day-forecast {
+        display: block;
+    }
+
+    .galleryGrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 5px;
+        margin-top: 10px;
+    }
+
+    
+}

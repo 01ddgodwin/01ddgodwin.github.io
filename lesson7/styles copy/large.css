@@ -1,0 +1,39 @@
+@media only screen and (min-width: 64em) {
+    .logo {
+        width: 100px;
+        height: auto;
+        margin-top: 1px;
+        padding: 5px;
+    }
+
+    #hero {
+        position: relative;
+    }
+    
+    #weather-summary{
+        position: absolute;
+        top: 20px;
+        left: 120px;
+        background-color: #72B01D;
+        padding: 10px;
+    }
+    
+    #weather-summary h1{
+        margin: 0;
+    }
+
+    .articleImg {
+        float: right;
+        max-width: 20%;
+        margin: 0 0 1em 1em;
+    }
+
+    #contact {
+        margin-top: 50px;
+    }
+
+    iframe {
+        display: inline-block;
+        padding-bottom: 5px;
+    };
+}
