@@ -1,0 +1,36 @@
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+table, caption {
+    box-shadow: 5px 5px 10px #628ca6;
+}
+
+table, caption, tr, th, td {
+    border: 1px solid gray;
+    border-collapse: collapse;
+    padding: 5px;
+    text-align: center;
+}
+
+tr {
+    background-color: #e7f0ed;
+}
+
+tr:nth-child(even) {
+    background-color: #e7ffed ;
+}
+
+th, #novemberSalesGoal {
+    background-color: #628ca6;
+    color: white;
+}
+
+caption, tfoot tr td {
+    background-color: #7fb9c2 ;
+}
+
+caption {
+    font-weight: bold;
+    font-size:1.3em;
+}
