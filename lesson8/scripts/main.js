@@ -1,6 +1,3 @@
-/* Wednesday, 20 May 2020*/
-
-
 /*declare date variable */
 let currentDate = new Date();
 let fullDate;
@@ -65,8 +62,8 @@ s = 10;
 
 if (t <= 50 && s >= 3) {
     f = 35.74 + 0.6215 * t - 35.75 * Math.pow(s, 0.16) + 0.4275 * t * Math.pow(s,0.16);
-    document.querySelector('#windChill').innerHTML = f.toFixed(0) + '&deg;';
-} else {
+    document.querySelector('#windChill').innerHTML = f.toFixed(0) + '&deg';
+}else {
     f = 'N/A';
     document.querySelector('#windChill').innerHTML = f;
 }
@@ -75,6 +72,8 @@ document.querySelector('#current-temp').innerHTML = t + '&deg';
 document.querySelector('#windSpeed').innerHTML = s + 'MPH';
 
 /*PANCAKE*/
+
+const currentDate = new Date();
 const aside = document.querySelector('aside');
 
 if (currentDate.getDay() === 5) {
@@ -83,6 +82,8 @@ if (currentDate.getDay() === 5) {
 else {
     aside.style.display = 'none';
 }
+
+//WEB FONT
 
 WebFont.load({
     google: {
@@ -94,5 +95,37 @@ WebFont.load({
   });
 
 //LAZY LOAD
+const imagesToLoad = document.querySelectorAll('img[data-src]');
 
+const loadImages = (image) => {
+    image.setAttribute('src', image.getAttribute('data-src'));
+    image.onload = () => {
+        image.removeAttribute('data-src');
+    };
+};
+
+if('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver((items, observer) => {
+        items.forEach((item) => {
+            if(item.isIntersecting) {
+                loadImages(item.target);
+                observer.unobserve(item.target);
+            }
+        });
+    });
+    imagesToLoad.forEach((img) => {
+        observer.observe(img);
+    });
+} else {
+    imagesToLoad.forEach((img) => {
+        loadImages(img);
+    });
+}
+
+
+//RATING
+
+function adjustRating(rating) {
+    document.querySelector('#rating').textContent = rating;
+}
 
