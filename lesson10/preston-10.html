@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Preston Town Page</title>
+    <link rel="shortcut icon" href="https://cdn2.iconfinder.com/data/icons/circle-icons-1/64/weather-512.png">
+    <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+</head>
+<body>
+    <aside class="hidden" id="pancake">
+        <p>Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</p>
+    </aside>
+    <header>
+        <img class="logo" src="https://cdn2.iconfinder.com/data/icons/circle-icons-1/64/weather-512.png" alt="Logo">
+        <h1>Big Sky Country Weather</h1>
+    </header>
+
+    <nav>
+        <nav>
+            <ul class="flex navigation">
+                <li class="ham" href="#">&equiv; Menu</li>
+                <li><a href="../lesson9/index.html">Home</a></li>
+                <li><a href="#">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="../lesson8/stormcenter.html">Storm Center</a></li>
+                <li><a href="../lesson7/gallery-7.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </nav>
+
+    <main>
+        <h1>Preston</h1>
+        <section id="hero" class="ham">
+            <img class="heroImg" src="https://1.bp.blogspot.com/-dGjskL5O840/XgQA2YeqShI/AAAAAAAAbUs/UAFjFLbrNNA9xmh1ud-ABGQEu1iUwnfqgCLcBGAsYHQ/s1600/IMG_20190623_163700.jpg" alt="hero img">
+            <!-- <picture class="heroImg">
+                <source srcset="images/heroImgSmall.jpg" media="(max-width: 400px)">
+                <source srcset="images/heroImgMedium.jpg" media="(max-width: 800px)">
+                <source srcset="images/heroImgLarge.jpg" media="(min-width: 801px)">
+                <img src="images/heroImgSmall.jpg" alt="Hero Image">
+            </picture> -->
+            <article id="weather-summary">
+                <h1>Weather Summary</h1>
+                <div>
+                    <img id="weatherImage" src="" alt=""></img>
+                </div>
+                <div>
+                    <span id="weatherDesc"></span>
+                </div>
+                <div>
+                    <span>Current Temperature:</span>
+                    <span id="currentTemp"></span>
+                </div>
+                <div>
+                    <span>Wind Speed:</span>
+                    <span id="windSpeed"></span>
+                </div>
+                <div>
+                    <span>Wind Chill:</span>
+                    <span id="windChill"></span>
+                </div>
+            </article> 
+        </section>
+        <section id="five-day-forecast">
+            <h2>Five-Day Forecast</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th id="day1">Day 1</th>
+                        <th id="day2">Day 2</th>
+                        <th id="day3">Day 3</th>
+                        <th id="day4">Day 4</th>
+                        <th id="day5">Day 5</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="" alt="" id="weather1"></td>
+                        <td><img src="" alt="" id="weather2"></td>
+                        <td><img src="" alt="" id="weather3"></td>
+                        <td><img src="" alt="" id="weather4"></td>
+                        <td><img src="" alt="" id="weather5"></td>
+                    </tr>
+                    <tr>
+                        <td id="temp1"></td>
+                        <td id="temp2"></td>
+                        <td id="temp3"></td>
+                        <td id="temp4"></td>
+                        <td id="temp5"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section id="article">
+            <h2>Article</h2>
+            <img class="articleImg" src="https://1.bp.blogspot.com/-JUoZFPb2AAA/XgP_kJXpriI/AAAAAAAAbT8/Xw7rKEbXc4Ef-25R2aNRn8c_UfbyD8ldACLcBGAsYHQ/s1600/IMG_20170720_130122-EFFECTS.jpg" alt="Preston Article">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam expedita veritatis optio laboriosam distinctio culpa rerum excepturi facilis. In error, vel vero illo ratione officiis provident repellat cupiditate cumque pariatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum autem minus, similique ad eveniet neque architecto dolorem! Soluta rem sit dicta totam atque? Sit quis aut earum vel neque nisi.Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum autem minus, similique ad eveniet neque architecto dolorem! Soluta rem sit dicta totam atque? Sit quis aut earum vel neque nisi.Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum autem minus, similique ad eveniet neque architecto dolorem! Soluta rem sit dicta totam atque? Sit quis aut earum vel neque nisi.</p>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Big Sky Country Weather <br>
+                333 W 6th S <br>
+                Rexburg, ID 83440 <br>
+            </p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9407.934015626173!2d-111.7940304083648!3d43.81531931852554!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9a82b3cb6ffe5b87!2sThe%20Towers%20Rexburg!5e0!3m2!1sen!2sus!4v1581010184570!5m2!1sen!2sus" width="600" height="200" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        </section>
+    </main>
+
+    <footer>
+        &copy; The Weather Site | <span id="current-date"></span> | Dillon Godwin
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+        <script src="scripts/main.js"></script>
+    </footer>
+    <script></script>
+</body>
+</html>
