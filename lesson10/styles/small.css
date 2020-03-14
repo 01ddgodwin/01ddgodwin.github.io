@@ -126,6 +126,10 @@ footer {
     max-width: 100%;
 }
 
+table {
+    background-color: #72B01D;
+}
+
 /*HERO IMAGE*/
 #hero {
     position: relative;
