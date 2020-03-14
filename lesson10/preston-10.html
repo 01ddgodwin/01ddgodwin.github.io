@@ -39,12 +39,6 @@
         <h1>Preston</h1>
         <section id="hero" class="ham">
             <img class="heroImg" src="https://1.bp.blogspot.com/-dGjskL5O840/XgQA2YeqShI/AAAAAAAAbUs/UAFjFLbrNNA9xmh1ud-ABGQEu1iUwnfqgCLcBGAsYHQ/s1600/IMG_20190623_163700.jpg" alt="hero img">
-            <!-- <picture class="heroImg">
-                <source srcset="images/heroImgSmall.jpg" media="(max-width: 400px)">
-                <source srcset="images/heroImgMedium.jpg" media="(max-width: 800px)">
-                <source srcset="images/heroImgLarge.jpg" media="(min-width: 801px)">
-                <img src="images/heroImgSmall.jpg" alt="Hero Image">
-            </picture> -->
             <article id="weather-summary">
                 <h1>Weather Summary</h1>
                 <div>
@@ -102,18 +96,26 @@
             <img class="articleImg" src="https://1.bp.blogspot.com/-JUoZFPb2AAA/XgP_kJXpriI/AAAAAAAAbT8/Xw7rKEbXc4Ef-25R2aNRn8c_UfbyD8ldACLcBGAsYHQ/s1600/IMG_20170720_130122-EFFECTS.jpg" alt="Preston Article">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam expedita veritatis optio laboriosam distinctio culpa rerum excepturi facilis. In error, vel vero illo ratione officiis provident repellat cupiditate cumque pariatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum autem minus, similique ad eveniet neque architecto dolorem! Soluta rem sit dicta totam atque? Sit quis aut earum vel neque nisi.Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum autem minus, similique ad eveniet neque architecto dolorem! Soluta rem sit dicta totam atque? Sit quis aut earum vel neque nisi.Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum autem minus, similique ad eveniet neque architecto dolorem! Soluta rem sit dicta totam atque? Sit quis aut earum vel neque nisi.</p>
         </section>
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Big Sky Country Weather <br>
-                333 W 6th S <br>
-                Rexburg, ID 83440 <br>
-            </p>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9407.934015626173!2d-111.7940304083648!3d43.81531931852554!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9a82b3cb6ffe5b87!2sThe%20Towers%20Rexburg!5e0!3m2!1sen!2sus!4v1581010184570!5m2!1sen!2sus" width="600" height="200" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-        </section>
     </main>
 
     <footer>
-        &copy; The Weather Site | <span id="current-date"></span> | Dillon Godwin
+        <section class="footerGrid">
+            <section class="copyright">
+                &copy; The Weather Site | <span id="current-date"></span> | Dillon Godwin
+            </section>
+            <section id="contact">
+                <section class="contactInfo">
+                    <h2>Contact</h2>
+                    <p>Big Sky Country Weather <br>
+                        333 W 6th S <br>
+                        Rexburg, ID 83440 <br>
+                    </p>
+                </section>
+                <section>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9407.934015626173!2d-111.7940304083648!3d43.81531931852554!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9a82b3cb6ffe5b87!2sThe%20Towers%20Rexburg!5e0!3m2!1sen!2sus!4v1581010184570!5m2!1sen!2sus" width="600" height="200" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                </section>
+            </section>
+        </section>
         <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
         <script src="scripts/main.js"></script>
     </footer>
