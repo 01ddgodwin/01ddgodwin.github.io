@@ -8,6 +8,7 @@
 
 #pancake{
     display: inline;
+    text-align: center;
 }
 
 ul {
