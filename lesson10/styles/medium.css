@@ -16,6 +16,7 @@
 	}
 	.navigation li a {
         text-align: center;
+        font-size: 2vw;
 	}
 	
 	.navigation li:first-child {
@@ -23,7 +24,7 @@
     }
 
     .logo {
-        width: 75px;
+        width: 65px;
         float: left;
         margin-left: 50px;
     }

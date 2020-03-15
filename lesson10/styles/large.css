@@ -5,21 +5,13 @@
         margin-top: 1px;
         padding: 5px;
     }
-
-    #hero {
-        position: relative;
-    }
     
     #weather-summary{
         position: absolute;
-        top: 20px;
-        left: 120px;
+        /* top: 20px;
+        left: 120px; */
         background-color: #72B01D;
         padding: 10px;
-    }
-    
-    #weather-summary h1{
-        margin: 0;
     }
 
     .articleImg {
@@ -42,4 +34,8 @@
     nav {
         line-height: 50px;
     }
+
+    .navigation li a {
+        font-size: 18px;
+	}
 }
