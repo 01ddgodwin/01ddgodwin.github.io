@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Soda Springs Town Page</title>
+    <link rel="shortcut icon" href="https://cdn2.iconfinder.com/data/icons/circle-icons-1/64/weather-512.png">
+    <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+</head>
+<body>
+    <header>
+        <img class="logo" src="https://cdn2.iconfinder.com/data/icons/circle-icons-1/64/weather-512.png" alt="Logo">
+        <h1>Big Sky Country Weather</h1>
+    </header>
+
+    <nav>
+        <nav>
+            <ul class="flex navigation">
+                <li class="ham" href="#">&equiv; Menu</li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="preston-11.html">Preston</a></li>
+                <li><a href="#">Soda&nbsp;&nbsp;Springs</a></li>
+                <li><a href="fish-haven.html">Fish&nbsp;&nbsp;Haven</a></li>
+                <li><a href="stormcenter.html">Storm&nbsp;&nbsp;Center</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </nav>
+
+    <main>
+        <h1>Soda Springs, Idaho</h1>
+        <section id="hero" class="ham">
+            <img class="heroImg" src="https://1.bp.blogspot.com/-DVtV5ZjfUTY/XgP-FlDpWLI/AAAAAAAAbTI/OniyMXuVJxcdxqkD5M0o4xP4P7vdAo2uACLcBGAsYHQ/s1600/00036IMG_00036_BURST20190704113737_COVER%2B%25281%2529.jpg" alt="hero img">
+            <article id="weather-summary">
+                <h1>Weather Summary</h1>
+                <div>
+                    <img id="weatherImage" src="" alt=""></img>
+                </div>
+                <div>
+                    <span id="weatherDesc"></span>
+                </div>
+                <div>
+                    <span>Current Temperature:</span>
+                    <span id="currentTemp"></span>
+                </div>
+                <div>
+                    <span>Wind Speed:</span>
+                    <span id="windSpeed"></span>
+                </div>
+                <div>
+                    <span>Wind Chill:</span>
+                    <span id="windChill"></span>
+                </div>
+            </article> 
+        </section>
+        <section id="five-day-forecast">
+            <h2>Five-Day Forecast</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th id="day1">Day 1</th>
+                        <th id="day2">Day 2</th>
+                        <th id="day3">Day 3</th>
+                        <th id="day4">Day 4</th>
+                        <th id="day5">Day 5</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="" alt="" id="weather1"></td>
+                        <td><img src="" alt="" id="weather2"></td>
+                        <td><img src="" alt="" id="weather3"></td>
+                        <td><img src="" alt="" id="weather4"></td>
+                        <td><img src="" alt="" id="weather5"></td>
+                    </tr>
+                    <tr>
+                        <td id="temp1"></td>
+                        <td id="temp2"></td>
+                        <td id="temp3"></td>
+                        <td id="temp4"></td>
+                        <td id="temp5"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section id="article">
+            <h2>Article</h2>
+            <img class="articleImg" src="https://1.bp.blogspot.com/-7Rigx_gmzMI/XgQEuVnVf0I/AAAAAAAAbWE/Iw0WE8JRa2Al1nhYJFQl8grFuFqDrotAwCLcBGAsYHQ/s1600/IMG_20191207_142002.jpg" alt="Preston Article">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam expedita veritatis optio laboriosam distinctio culpa rerum excepturi facilis. In error, vel vero illo ratione officiis provident repellat cupiditate cumque pariatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum autem minus, similique ad eveniet neque architecto dolorem! Soluta rem sit dicta totam atque? Sit quis aut earum vel neque nisi.Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum autem minus, similique ad eveniet neque architecto dolorem! Soluta rem sit dicta totam atque? Sit quis aut earum vel neque nisi.Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum autem minus, similique ad eveniet neque architecto dolorem! Soluta rem sit dicta totam atque? Sit quis aut earum vel neque nisi.</p>
+        </section>
+    </main>
+
+    <footer>
+        <section class="footerGrid">
+            <section class="copyright">
+                &copy; The Weather Site | <span id="current-date"></span> | Dillon Godwin
+            </section>
+            <section id="contact">
+                <section class="contactInfo">
+                    <h2>Contact</h2>
+                    <p>&#x1F4CD;Big Sky Country Weather <br>
+                        333 W 6th S <br>
+                        Rexburg, ID 83440 <br>
+                    </p>
+                </section>
+                <section>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9407.934015626173!2d-111.7940304083648!3d43.81531931852554!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9a82b3cb6ffe5b87!2sThe%20Towers%20Rexburg!5e0!3m2!1sen!2sus!4v1581010184570!5m2!1sen!2sus" width="600" height="200" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                </section>
+            </section>
+        </section>
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+        <script src="scripts/main.js"></script>
+        <script src="scripts/sodaSpringsWeather.js"></script>
+    </footer>
+    <script></script>
+</body>
+</html>

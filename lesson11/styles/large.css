@@ -1,0 +1,49 @@
+@media only screen and (min-width: 64em) {
+    .logo {
+        width: 100px;
+        height: auto;
+        margin-top: 1px;
+        padding: 5px;
+    }
+    
+    #weather-summary{
+        position: absolute;
+        padding: 10px;
+    }
+
+    .articleImg {
+        float: right;
+        max-width: 20%;
+        margin: 0 0 1em 1em;
+    }
+
+    #contact {
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    iframe {
+        display: inline-block;
+        padding-bottom: 5px;
+    }
+
+    nav {
+        line-height: 50px;
+    }
+
+    .navigation li a {
+        font-size: 18px;
+    }
+    
+    #cities {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .galleryGrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 5px;
+        margin-top: 10px;
+    }
+}
