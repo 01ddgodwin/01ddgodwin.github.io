@@ -65,47 +65,30 @@ fetch(apiURLForecast)
       
     });
 
-// fetch('https://byui-cit230.github.io/weather/data/towndata.json')
-//     .then(result => { return result.json()
-//         }
-//     )
-//     .then(
-//         townList => {
-//             let towns = townList.towns;
-//             towns.forEach(
-//                 town => {
-//                     let section = document.createElement('section');
+function getEvents(cityName) {
 
-//                     let event1 = document.createElement('p');
-//                     event1.textContent = town.events;
-
-//                     // let event2 = document.createElement('p');
-//                     // event2.textContent = `${town.events[1]}`;
-
-//                     // let event3 = document.createElement('p');
-//                     // event3.textContent = `${town.events[2]}`;
-
-//                     section.appendChild(event1);
-//                     // section.appendChild(event2);
-//                     // section.appendChild(event3);
-
-//                     document.querySelector('#townEvents').appendChild(section);
-
-//                     console.log(town);
-//                 }
-
-//             )
-//         }
-//     )
-
-// fetch('https://byui-cit230.github.io/weather/data/towndata.json')
-//   .then((response) => {
-//     return response.json();
-//   })
-//   .then((data) => {
-//     let event = data.towns[0].events[0];
-
-//     var towns = document.getElementById("townEvents");
-//     document.querySelector(`#townEvents`);
-//     console.log(data);
-//   });
+  fetch ('https://byui-cit230.github.io/weather/data/towndata.json')
+  .then(
+      result => {
+          return result.json();
+      })
+  
+  .then(
+      (result) => {
+          result.towns.forEach(
+              (town) => {
+                  if (town.name.toLowerCase() === cityName.toLowerCase()){
+                      town.events.forEach(
+                          event => {
+                              let li = document.createElement('li');
+                              li.textContent = event;
+  
+                              document.querySelector('#events').appendChild(li);
+                          }
+                      )
+                  }
+              } 
+          )
+      }
+  );
+}
