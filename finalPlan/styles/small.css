@@ -1,0 +1,26 @@
+body {
+    text-align: center;
+    margin: 0 100px 50px 100px;
+}
+
+h1 {
+    font-family: 'Pacifico', cursive;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.mainTypo {
+    font-family: 'Pacifico', cursive;
+}
+
+.secondaryTypo {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.images {
+    width: 800px;
+    height: auto;
+    box-shadow:10px 10px 10px 10px black;
+}
