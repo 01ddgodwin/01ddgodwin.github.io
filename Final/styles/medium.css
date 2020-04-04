@@ -1,5 +1,16 @@
 @media only screen and (min-width: 32.5em) {
 
+    .container .logo a img {
+        position: absolute;
+        top: 5px;
+        left: 2em;
+    }
+
+    .title p {
+        top: -0.3em;
+        left: 7em;
+    }
+
     .iframe {
         width: 400px;
     }
@@ -39,10 +50,6 @@
 
     .dropbtn { 
         font-size: 1vw;
-    }
-
-    .title p {
-        top: -0.3em;
     }
 
     .roomGrid {
@@ -96,7 +103,7 @@
         max-height: 50%;
         border-radius: 17px;
         float: right;
-        margin: 0 10em 16em 0;
+        margin-left: 1em;
         box-shadow: 5px 5px 3px #FFDC34;
         filter:contrast(110%);
         filter:saturate(2);
@@ -124,7 +131,7 @@
         max-height: 50%;
         border-radius: 17px;
         float: right;
-        margin: 0 10em 16em 0;
+        margin-left: 1em; 
         box-shadow: 5px 5px 3px #FFDC34;
         filter:contrast(50%);
         filter:saturate(1.5);
@@ -133,28 +140,28 @@
     #temple1-name {
         background-color: #4DD599;
         padding: 1em;
-        width: 12em;
+        width: 15em;
         border-radius: 17px;
     }
 
     #temple2-name {
         background-color: #4DD599;
         padding: 1em;
-        width: 12em;
+        width: 15em;
         border-radius: 17px;
     }
 
     #temple3-name {
         background-color: #4DD599;
         padding: 1em;
-        width: 12em;
+        width: 15em;
         border-radius: 17px;
     }
 
     #temple4-name {
         background-color: #4DD599;
         padding: 1em;
-        width: 12em;
+        width: 15em;
         border-radius: 17px;
     }
 }

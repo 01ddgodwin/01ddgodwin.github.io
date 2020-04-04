@@ -28,8 +28,15 @@
         margin-top: 75px;
     }
 
+    .container .logo a img {
+        position: absolute;
+        top: 5px;
+        left: 5em;
+    }
+
     .title p {
         top: 0.2em;
+        left: 9em;
     }
 
     .roomGrid {
