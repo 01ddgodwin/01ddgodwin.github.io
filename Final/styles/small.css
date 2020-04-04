@@ -284,7 +284,11 @@ main {
     padding: 1em;
     background-color: #4DD599;
     color: #110133;
-    margin-left: 100px;
+    text-align: center;
+}
+
+.reservePara {
+    padding: 1em;
     text-align: center;
 }
 
@@ -402,6 +406,7 @@ footer {
     border-radius: 17px;
     float: right;
     margin-left: 1em;
+    margin-bottom: 1em;
     box-shadow: 5px 5px 3px #FFDC34;
     filter:contrast(110%);
     filter:saturate(1.5);
@@ -415,7 +420,7 @@ footer {
     max-height: 50%;
     border-radius: 17px;
     float: right;
-    margin-left: 1em;
+    margin-bottom: 1em;
     box-shadow: 5px 5px 3px #FFDC34;
     filter:contrast(110%);
     filter:saturate(2);
@@ -430,6 +435,7 @@ footer {
     border-radius: 17px;
     float: right;
     margin-left: 1em;
+    margin-bottom: 1em;
     box-shadow: 5px 5px 3px #FFDC34;
     filter:contrast(200%);
     filter:saturate(2);
@@ -444,6 +450,7 @@ footer {
     border-radius: 17px;
     float: right;
     margin-left: 1em;
+    margin-bottom: 1em;
     box-shadow: 5px 5px 3px #FFDC34;
     filter:contrast(50%);
     filter:saturate(1.5);
@@ -530,13 +537,11 @@ form div {
 .contactDiv {
     display: block;
     align-items: center;
-    padding: 2em 0em 5em 5em;
     text-align: center;
 }
 
 .address {
-    /* margin-left: 100px; */
-    margin-top: 250px;
+    padding-top: 14em;
 }
 
 /* MISSIONARIES */

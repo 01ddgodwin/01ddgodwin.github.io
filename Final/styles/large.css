@@ -16,11 +16,11 @@
         float: left;
         box-shadow: 5px 5px 3px #FFDC34;
         border-radius: 17px;
-        width: 600px;
+        width: 100%;
     }
 
     .contactDiv {
-        padding: 3em 5em 10em 5em;
+        padding: 3em 5em 3em 5em;
     }
     
     .address {

@@ -13,6 +13,8 @@
 
     .iframe {
         width: 400px;
+        margin-bottom: 2em;
+        margin-right: 2em;
     }
 
     .contacth1 {
@@ -42,10 +44,11 @@
     }
 
     .iframeContact {
-        padding-left: 5em;
         float: left;
         box-shadow: 5px 5px 3px #FFDC34;
         border-radius: 17px;
+        margin-bottom: 1em;
+        width: 100%;
     }
 
     .container .navbar ul li a {
@@ -168,4 +171,5 @@
         width: 15em;
         border-radius: 17px;
     }
+
 }
