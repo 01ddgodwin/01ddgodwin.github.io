@@ -1,0 +1,160 @@
+@media only screen and (min-width: 32.5em) {
+
+    .iframe {
+        width: 400px;
+    }
+
+    .contacth1 {
+        padding-top: 0em;
+    }
+
+    #reserveDiv {
+        padding: 5em 5em 2em 5em;
+        display: flex;
+        align-items: center;
+    }
+
+    .receptionGrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 2em 2em 2em 2em;
+        text-align: center;
+        grid-gap: 2em;
+    }
+
+    .menus {
+        grid-column: 1-2;
+    }
+
+    .iframeContact {
+        padding-left: 5em;
+        float: left;
+        box-shadow: 5px 5px 3px #FFDC34;
+        border-radius: 17px;
+    }
+
+    .container .navbar ul li a {
+        font-size: 1vw;
+    }
+
+    .dropbtn { 
+        font-size: 1vw;
+    }
+
+    .title p {
+        top: -0.3em;
+    }
+
+    .roomGrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 2em 2em 5em 2em;
+        text-align: center;
+        list-style-position: outside;
+    }
+
+    .king {
+        grid-column: 1;
+    }
+    
+    .queen {
+        grid-column: 2;
+    }
+    
+    .suite {
+        grid-column: 1;
+    }
+
+    .serviceGrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .templeSize {
+        padding: 3em 5em 3em 5em;
+    }
+
+    .templeImg1 {
+        object-fit: cover;
+        object-position: 48% 20%;
+        width: 60%;
+        height: 200px;
+        max-height: 50%;
+        border-radius: 17px;
+        float: right;
+        margin-left: 1em;
+        box-shadow: 5px 5px 3px #FFDC34;
+        filter:contrast(110%);
+        filter:saturate(1.5);
+    }
+
+    .templeImg2 {
+        object-fit: cover;
+        object-position: 48% 20%;
+        width: 60%;
+        height: 200px;
+        max-height: 50%;
+        border-radius: 17px;
+        float: right;
+        margin: 0 10em 16em 0;
+        box-shadow: 5px 5px 3px #FFDC34;
+        filter:contrast(110%);
+        filter:saturate(2);
+    }
+
+    .templeImg3 {
+        object-fit: cover;
+        object-position: 40% 20%;
+        width: 60%;
+        height: 200px;
+        max-height: 50%;
+        border-radius: 17px;
+        float: right;
+        margin-left: 1em;
+        box-shadow: 5px 5px 3px #FFDC34;
+        filter:contrast(200%);
+        filter:saturate(2);
+    }
+
+    .templeImg4 {
+        object-fit: cover;
+        object-position: 50% 20%;
+        width: 60%;
+        height: 200px;
+        max-height: 50%;
+        border-radius: 17px;
+        float: right;
+        margin: 0 10em 16em 0;
+        box-shadow: 5px 5px 3px #FFDC34;
+        filter:contrast(50%);
+        filter:saturate(1.5);
+    }
+
+    #temple1-name {
+        background-color: #4DD599;
+        padding: 1em;
+        width: 12em;
+        border-radius: 17px;
+    }
+
+    #temple2-name {
+        background-color: #4DD599;
+        padding: 1em;
+        width: 12em;
+        border-radius: 17px;
+    }
+
+    #temple3-name {
+        background-color: #4DD599;
+        padding: 1em;
+        width: 12em;
+        border-radius: 17px;
+    }
+
+    #temple4-name {
+        background-color: #4DD599;
+        padding: 1em;
+        width: 12em;
+        border-radius: 17px;
+    }
+}

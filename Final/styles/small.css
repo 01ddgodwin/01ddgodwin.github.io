@@ -1,0 +1,655 @@
+h1 {
+    font-family: 'Pacifico', cursive;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+main {
+    background-color: #FDFFFC;
+    margin: 0;
+    padding: 3em 5em 3em 5em;
+}
+
+.templeSize {
+    padding: 3em 2em 3em 2em;
+}
+
+/*NAVIGATION*/
+
+.title p {
+    font-family: 'Pacifico', cursive;
+    color: #110133;
+    text-decoration: none;
+    font-size: 22px;
+    position: absolute;
+    left: 9em;
+    top: -0.3em;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  grid-gap: 3em
+}
+
+.container {
+  height: 60px;
+  background-color: #4DD599;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.container .logo {
+  max-width: 250px;
+  padding: 0 10px;
+  overflow: hidden;
+}
+
+.container .logo a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 60px;
+}
+
+.container .logo a img {
+  position: absolute;
+  top: 5px;
+  left: 5em;
+}
+
+.container .navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding: 0 10px;
+  position: absolute;
+  left: 50%;
+}
+
+.container .navbar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container .navbar ul li a {
+  text-decoration: none;
+  color: #110133;
+  font-size: 16px;
+  text-transform: uppercase;
+  display: block;
+  height: 60px;
+  line-height: 60px;
+  cursor: pointer;
+  padding: 0 10px;
+  font-family: 'Pacifico', cursive;
+}
+
+.container .navbar ul li a:hover {
+  color: #4DD599;
+  background-color: #110133;
+}
+
+.container .navbar ul .close {
+  display: none;
+  text-align: right;
+  padding: 10px;
+}
+
+.container .navbar ul .close span {
+  font-size: 40px;
+  display: inline-block;
+  border: 1px solid #FFDC34;
+  padding: 0 10px;
+  cursor: pointer;
+}
+
+.container .navbar .icon-bar {
+  padding: 18px 8px;
+  width: 50px;
+  height: 60px;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.container .navbar .icon-bar i {
+  background-color: #FFDC34;
+  height: 2px;
+}
+
+@media only screen and (max-width: 32.5em) {
+  .container {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
+  .container .logo {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+  }
+
+  .container .navbar {
+    -webkit-box-flex: 0;
+    -ms-flex: 0;
+    flex: 0;
+    left: 85%;
+  }
+
+  .container .navbar ul {
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    position: fixed;
+    left: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background: #4DD599;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    -webkit-transition: left .3s;
+    -o-transition: left .3s;
+    transition: left .3s;
+    z-index: 1;
+  }
+
+  .container .navbar ul li a {
+    padding: 10px;
+    font-size: 16px;
+    height: auto;
+    line-height: normal;
+    color: #110133;
+  }
+
+  .container .navbar ul .close {
+    display: block;
+  }
+
+  .container .navbar .icon-bar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .container .navbar ._Menus-show {
+    left: 0;
+  }
+}
+ 
+.dropbtn {
+    font-family: 'Pacifico', cursive;
+    background-color: #4DD599;
+    color: #110133;
+    padding: 16px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    display: block;
+    height: 60px;
+    line-height: 60px;
+    cursor: pointer;
+    padding: 0 10px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #4DD599;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  font-family: 'Pacifico', cursive;
+}
+
+.dropdown-content a {
+  color: #110133;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #110133;
+    color: #4DD599;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #110133;
+  color: #4DD599;
+}
+
+
+/* RESERVE ROOM */
+
+#reserveDiv {
+    padding: 5em 7em 2em 2em;
+    display: flex;
+    align-items: center;
+}
+
+.reserve {
+    border-radius: 5px;
+    text-decoration: none;
+    font-family: 'Pacifico', cursive;
+    float: right;
+    padding: 1em;
+    background-color: #4DD599;
+    color: #110133;
+    margin-left: 100px;
+    text-align: center;
+}
+
+.reserve:hover {
+    background-color: #110133;
+    color: #4DD599;
+}
+
+.reserveImg {
+    border-radius: 17px;
+    object-fit: cover;
+    object-position: 60% 40%;
+    width: 70%;
+    height: 200px;
+    max-height: 50%;
+    box-shadow: 5px 5px 3px #FFDC34;
+    filter:contrast(150%);
+}
+
+/* HOME TEMPLE */
+
+.homeTempleImg {
+    object-fit: cover;
+    object-position: 80% 20%;
+    width: 40%;
+    height: 310px;
+    max-height: 50%;
+    border-radius: 17px;
+    float: right;
+    margin-left: 1em;
+    box-shadow: 5px 5px 3px #FFDC34;
+    filter:contrast(200%);
+}
+
+.homeTempleTitle {
+    font-size: 22px;
+    font-family: 'Pacifico', cursive;
+}
+
+.homeTemplePara {
+    font-family: 'Montserrat', sans-serif;
+    padding-bottom: 3em;   
+}
+
+/* HOME CONTACT */
+
+.homeContactDiv {
+    padding: 2em 5em 7em 5em;
+    text-align: center;
+}
+
+.iframe {
+    float: left;
+    box-shadow: 5px 5px 3px #FFDC34;
+    border-radius: 17px;
+    width: auto;
+    position: relative;
+    right: 4em;
+}
+
+.contacth1 {
+    padding-top: 7em;
+}
+
+.contactLink {
+    border-radius: 5px;
+    text-decoration: none;
+    font-family: 'Pacifico', cursive;
+    padding: .4em 1em .4em 1em;
+    background-color: #4DD599;
+    color: #110133;
+}
+
+.contactLink:hover {
+    background-color: #110133;
+    color: #4DD599;
+}
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    background: #4DD599;
+    height: 4em;
+    padding-top: 1em;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* TEMPLES */
+
+.templeStyles {
+    padding: 1em 1em 1em 1em;
+}
+
+.templeStyles p {
+    font-family: 'Pacifico', cursive;
+    font-size: 22px;
+}
+
+.templeStyles h3, li {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    list-style-position: inside;
+    font-weight: normal;
+}
+
+.templeImg1 {
+    object-fit: cover;
+    object-position: 48% 20%;
+    width: 60%;
+    height: 200px;
+    max-height: 50%;
+    border-radius: 17px;
+    float: right;
+    margin-left: 1em;
+    box-shadow: 5px 5px 3px #FFDC34;
+    filter:contrast(110%);
+    filter:saturate(1.5);
+}
+
+.templeImg2 {
+    object-fit: cover;
+    object-position: 48% 20%;
+    width: 60%;
+    height: 200px;
+    max-height: 50%;
+    border-radius: 17px;
+    float: right;
+    margin-left: 1em;
+    box-shadow: 5px 5px 3px #FFDC34;
+    filter:contrast(110%);
+    filter:saturate(2);
+}
+
+.templeImg3 {
+    object-fit: cover;
+    object-position: 40% 20%;
+    width: 60%;
+    height: 200px;
+    max-height: 50%;
+    border-radius: 17px;
+    float: right;
+    margin-left: 1em;
+    box-shadow: 5px 5px 3px #FFDC34;
+    filter:contrast(200%);
+    filter:saturate(2);
+}
+
+.templeImg4 {
+    object-fit: cover;
+    object-position: 50% 20%;
+    width: 60%;
+    height: 200px;
+    max-height: 50%;
+    border-radius: 17px;
+    float: right;
+    margin-left: 1em;
+    box-shadow: 5px 5px 3px #FFDC34;
+    filter:contrast(50%);
+    filter:saturate(1.5);
+}
+
+#temple1-name {
+    background-color: #4DD599;
+    padding: 1em;
+    width: 12em;
+    border-radius: 17px;
+}
+
+#temple2-name {
+    background-color: #4DD599;
+    padding: 1em;
+    width: 12em;
+    border-radius: 17px;
+}
+
+#temple3-name {
+    background-color: #4DD599;
+    padding: 1em;
+    width: 12em;
+    border-radius: 17px;
+}
+
+#temple4-name {
+    background-color: #4DD599;
+    padding: 1em;
+    width: 12em;
+    border-radius: 17px;
+}
+
+.weatherSummary {
+    background-color: #4DD599;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    padding: 1em 0 1em 0;
+    border-radius: 17px;
+}
+
+/* RESERVATIONS */
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 3em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.reservationsTitle {
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+    font-size: 25px;
+}
+
+.reservationsSize {
+    padding-top: 50px;
+}
+
+form div {
+    padding-bottom: 18px;
+}
+
+.reservationButton {
+    background-color: #4DD599;
+    color: #110133;
+    border-radius: 5px;
+    width: 100px;
+    height: 30px;
+    border: none;
+    box-shadow: 3px 3px 3px #FFDC34;
+}
+
+.reservationButton:hover {
+    background-color: #110133;
+    color: #4DD599;
+}
+
+/* CONTACT */
+
+.contactDiv {
+    display: block;
+    align-items: center;
+    padding: 2em 0em 5em 5em;
+    text-align: center;
+}
+
+.address {
+    /* margin-left: 100px; */
+    margin-top: 250px;
+}
+
+/* MISSIONARIES */
+
+.serviceGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 2em 2em 5em 2em;
+    text-align: center;
+    list-style-position: outside;
+    
+}
+
+.serviceGrid li {
+    text-align: left;
+}
+
+.roomGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 2em 2em 5em 2em;
+    text-align: center;
+    list-style-position: outside;
+}
+
+.roomGrid li {
+    text-align: left;
+}
+
+.roomGrid ul {
+    padding-bottom: 2em;
+}
+
+.roomGrid h3 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.roomGrid img {
+    width: 75%;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px #FFDC34;
+}
+
+.reserveMissions {
+    border-radius: 5px;
+    text-decoration: none;
+    font-family: 'Pacifico', cursive;
+    padding: 1em;
+    background-color: #4DD599;
+    color: #110133;
+    text-align: center;
+}
+
+.reserveMissions:hover {
+    background-color: #110133;
+    color: #4DD599;
+}
+
+/* RECEPTIONS */
+
+.receptionTitle {
+    text-align: center;
+    padding-top: 1em;
+}
+
+.receptionGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 2em 2em 2em 2em;
+    text-align: center;
+    grid-gap: 2em;
+}
+
+.receptionGrid h3 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.receptionGrid p {
+    text-align: left;
+}
+
+.receptionImg {
+    object-fit: cover;
+    object-position: 40% 60%;
+    width: 80%;
+    height: 200px;
+    max-height: 50%;
+    border-radius: 17px;
+    box-shadow: 5px 5px 3px #FFDC34;
+    filter:contrast(50%);
+    filter:saturate(1.5);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contactReception {
+    border-radius: 5px;
+    text-decoration: none;
+    font-family: 'Pacifico', cursive;
+    padding: .4em 1em .4em 1em;
+    background-color: #4DD599;
+    color: #110133;
+    text-align: center;
+}
+
+.contactReception:hover {
+    background-color: #110133;
+    color: #4DD599;
+}
+
+.contactReceptionDiv {
+    text-align: center;
+    padding-bottom: 2em;
+}

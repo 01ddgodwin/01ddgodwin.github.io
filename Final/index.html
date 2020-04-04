@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="images/logo.png">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+</head>
+<body>
+    <header></header>
+    <nav>
+        
+        <div class="container">
+            <div class="logo">
+                <a href="#"><img src="images/logo.png" alt="logo"></a>
+            </div>
+            <a href="#" class="title"><p>Temple Inn & Suites</p></a>
+        <div class="navbar">
+        
+        <div class="icon-bar" onclick="Show()">
+            <i></i>
+            <i></i>
+            <i></i>
+        </div>
+        
+        <ul id="nav-lists">
+            <li class="close"><span onclick="Hide()">×</span></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="temples.html">Temples</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+            <div class="dropdown" style="float:left;">
+                <button class="dropbtn">Services</button>
+                <div class="dropdown-content" style="left:0;">
+                <a href="receptions.html">Receptions</a>
+                <a href="missionaries.html">Full Time Temple Missionary</a>
+                </div> 
+            </div>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        
+        </div>
+        </div>
+
+    </nav>
+    <main>
+        <div id="reserveDiv">
+            <img class="reserveImg" src="images/hotelDoor.jpg" alt="">
+            <a class="reserve" href="reservations.html">Reserve A Room Now</a>
+        </div>
+        <hr>
+        <div class="homeTempleDiv">
+            <img class="homeTempleImg" src="images/mesaTemple2.jpg" alt="">
+            <p class="homeTempleTitle">Mesa Arizona Temple</p>
+            <p class="homeTemplePara">The LDS temple in Mesa was one of the first to be constructed by the church. 
+                Similar to the Cardston Alberta Temple, the church decided to hold a competition 
+                for the design of the temple with the exception of only inviting three Salt 
+                Lake firms to participate. The winning design was proposed by Don Carlos Young, 
+                Jr. and Ramm Hansen. Announced in 1919, only seven years after Arizona had achieved 
+                statehood, it was one of 3 temples announced and constructed to serve outlying 
+                Latter-day Saint settlements in the early part of the century, the others being 
+                constructed in Laie, Hawaii and Cardston, Alberta. While none of the three settlements 
+                were particularly large in their own right, they were considered thriving centers 
+                of largely Latter-day Saint populations. The long and arduous trip to existing temples 
+                located in the state of Utah would prove costly and even dangerous for the faithful of 
+                the era, and temple attendance was (and is) an important part of the faith. As such, it was 
+                seen as necessary to construct temples in these communities.
+            </p>
+        </div>
+        <hr>
+        <div class="homeContactDiv">
+            <iframe class="iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3101.4048370284895!2d-77.09772048515225!3d38.98325594948471!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c97b6b3b5b43%3A0x9c8eb1c5547b83eb!2s4800%20Montgomery%20Ln%20%23300%2C%20Bethesda%2C%20MD%2020814!5e0!3m2!1sen!2sus!4v1585785541334!5m2!1sen!2sus" width="600" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            <h1 class="contacth1">Contact</h1>
+            <p>&#x1F4CD;Temple Inn & Suites <br>Montgomery Ln #300 <br>Bethesda, MD 20814</p>
+            <a class="contactLink" href="contact.html">Contact Us</a>
+        </div>
+    </main>
+    <footer>
+        <div>
+            &copy; Temple Inn & Suites | <span id="current-date"></span> | Dillon Godwin
+        </div>
+    </footer>
+    <script src="scripts/main.js"></script>
+</body>
+</html>

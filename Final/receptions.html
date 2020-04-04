@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receptions</title>
+    <link rel="shortcut icon" href="images/logo.png">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header></header>
+    <nav>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+            </div>
+            <a href="index.html" class="title"><p>Temple Inn & Suites</p></a>
+        <div class="navbar">
+        
+        <div class="icon-bar" onclick="Show()">
+            <i></i>
+            <i></i>
+            <i></i>
+        </div>
+        
+        <ul id="nav-lists">
+            <li class="close"><span onclick="Hide()">×</span></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="temples.html">Temples</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+            <div class="dropdown" style="float:left;">
+                <button class="dropbtn">Services</button>
+                <div class="dropdown-content" style="left:0;">
+                <a href="#">Receptions</a>
+                <a href="missionaries.html">Full Time Temple Missionary</a>
+                </div> 
+            </div>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        
+        </div>
+        </div>
+    </nav>
+    <main>
+        <img class="receptionImg" src="images/wedding.jpg" alt="">
+        <h1 class="receptionTitle">Reception Services</h1>
+        <div class="receptionGrid">
+            <div class="setup">
+                <h3>Seating and Room Setup</h3>
+                <p>Most of our venues can be set up to match your plans. We offer flexible seating 
+                    ranging from eight to 12 guests per table. Dance Floor and Risers are fully mobile 
+                    and adaptable to your specifications. Choose from any number of venues to find the 
+                    one to suit your style.
+                </p>
+            </div class="equipment">
+            <div>
+                <h3>Audio-Visual Equipment</h3>
+                <p>Our onsite audio-visual experts can help you execute your ideas, from a slide show, 
+                    gobo illuminations, and special lighting.
+                </p>
+            </div>
+            <div class="menus">
+                <h3>Menus and Catering</h3>
+                <p>Our comprehensive wedding package offers a wide variety of plated or buffet dinners. 
+                    Customize the menu to reflect your cultural preferences. Please contact us to view 
+                    our wedding brochure including menus. Our experts offer individually tailored menu 
+                    suggestions for the success of your wedding. A truly memorable event always features 
+                    deliciously tempting food and drinks. Whether in our elegant banquet facilities or 
+                    in the private dining rooms, our talented chefs will create inspirational cuisine, 
+                    designed to fuel energy and fire imaginations. Our experienced staff will dazzle your 
+                    guests with their creativity and finesse.
+                </p>
+            </div>
+        </div>
+        <div class="contactReceptionDiv">
+            <p>Contact us for more information.</p>
+            <a class="contactReception" href="contact.html">Contact Us</a>
+        </div>
+    </main>
+    <footer>
+        <div>
+            &copy; Temple Inn & Suites | <span id="current-date"></span> | Dillon Godwin
+        </div>
+    </footer>
+    <script src="scripts/main.js"></script>
+</body>
+</html>

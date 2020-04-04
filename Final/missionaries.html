@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receptions</title>
+    <link rel="shortcut icon" href="images/logo.png">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header></header>
+    <nav>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+            </div>
+            <a href="index.html" class="title"><p>Temple Inn & Suites</p></a>
+        <div class="navbar">
+        
+        <div class="icon-bar" onclick="Show()">
+            <i></i>
+            <i></i>
+            <i></i>
+        </div>
+        
+        <ul id="nav-lists">
+            <li class="close"><span onclick="Hide()">×</span></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="temples.html">Temples</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+            <div class="dropdown" style="float:left;">
+                <button class="dropbtn">Services</button>
+                <div class="dropdown-content" style="left:0;">
+                <a href="receptions.html">Receptions</a>
+                <a href="#">Full Time Temple Missionary</a>
+                </div> 
+            </div>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        
+        </div>
+        </div>
+    </nav>
+    <main>
+        <div class="serviceGrid">
+            <div>
+                <h1>Specialized Services</h1>
+                <ul>
+                    <li>Free access to changing rooms and bathroom facilities for temple patrons who have traveled far and need to change to and from church clothes</li>
+                    <li>A playroom and low-cost, short-term babysitting services for the children of patrons</li>
+                    <li>Long-term stay accommodations in kitchenette suites for full-time temple missionaries</li>
+                    <li>Temple history themed reception and sitting area</li>
+                    <li>A wedding reception hall that can be easily customized with a simple catering menu and kitchen access for food preparation and serving</li>
+                    <li>A family search center that supports family search and ordinance work</li>
+                </ul>
+            </div>
+            <div>
+                <h1>Free Ameneties</h1>
+                <ul>
+                    <li>Breakfast</li>
+                    <li>Exercise/workout room</li>
+                    <li>Indoor pool</li>
+                    <li>WiFi high-speed internet access and smart TVs</li>
+                    <li>Parking</li>
+                    <li>Temple shuttle</li>
+                    <li>Family history consultation and family ordinance card service</li>
+                </ul>
+            </div>
+        </div>
+        <div class="roomGrid">
+            <section class="king">
+                <img src="images/king.jpg" alt="">
+                <h1>1 King</h1>
+                <h3>Room Ameneties</h3>
+                <ul>
+                    <li>Maximum Occupancy: 2</li>
+                    <li>1 King Bed</li>
+                    <li>Sofa</li>
+                    <li>Chair</li>
+                    <li>Alarm Clock</li>
+                    <li>Safe, in room</li>
+                    <li>Desk, writing / work, with ergonomic chair, and electrical outlet</li>
+                    <li>Iron and ironing board</li>
+                    <li>Mini Fridge</li>
+                </ul>
+                <a class="reserveMissions" href="reservations.html">Reserve A Room Now</a>
+            </section>
+            <section class="queen">
+                <img src="images/queen.jpg" alt="">
+                <h1>2 Queens</h1>
+                <h3>Room Ameneties</h3>
+                <ul>
+                    <li>Maximum Occupancy: 4</li>
+                    <li>2 Queen Beds</li>
+                    <li>Sofa</li>
+                    <li>Chair</li>
+                    <li>Alarm Clock</li>
+                    <li>Safe, in room</li>
+                    <li>Desk, writing / work, with ergonomic chair, and electrical outlet</li>
+                    <li>Iron and ironing board</li>
+                    <li>Mini Fridge</li>
+                </ul>
+                <a class="reserveMissions" href="reservations.html">Reserve A Room Now</a>
+            </section>
+            <section class="suite">
+                <img src="images/suite.jpg" alt="">
+                <h1>1 Bedroom 2 Room Suite</h1>
+                <h3>Room Ameneties</h3>
+                <ul>
+                    <li>Maximum Occupancy: 2</li>
+                    <li>1 King Bed</li>
+                    <li>Sofa</li>
+                    <li>Chair</li>
+                    <li>Alarm Clock</li>
+                    <li>Safe, in room</li>
+                    <li>Desk, writing / work, electrical outlet</li>
+                    <li>Iron and ironing board</li>
+                    <li>Mini Fridge</li>
+                    <li>2 TVs</li>
+                </ul>
+                <a class="reserveMissions" href="reservations.html">Reserve A Room Now</a>
+            </section>
+        </div>
+        <form class="contactForm" action="thanks.html" method="GET">
+            <p class="reservationsTitle">Contact</p>
+            <div>
+                <label for="fullName">Full Name: </label>
+                <input type="text" id="fullName" name="fullName" required>
+            </div>
+            <div>
+                <label for="email">Email: </label>
+                <input type="email" id="email" name="email" placeholder="example@domain.com">
+            </div>
+            <div>
+                <label for="phoneNumer">Phone Number: </label>
+                <input type="tel" id="phoneNumber" name="phoneNumber" required>
+            </div>
+            <div>
+                <label for="">State: </label>
+                <select id="state" name="state" required>
+                    <option value="" disabled selected>Select Your State</option>
+                    <option value="AL">Alabama</option>
+                    <option value="AK">Alaska</option>
+                    <option value="AZ">Arizona</option>
+                    <option value="AR">Arkansas</option>
+                    <option value="CA">California</option>
+                    <option value="CO">Colorado</option>
+                    <option value="CT">Connecticut</option>
+                    <option value="DE">Delaware</option>
+                    <option value="DC">District Of Columbia</option>
+                    <option value="FL">Florida</option>
+                    <option value="GA">Georgia</option>
+                    <option value="HI">Hawaii</option>
+                    <option value="ID">Idaho</option>
+                    <option value="IL">Illinois</option>
+                    <option value="IN">Indiana</option>
+                    <option value="IA">Iowa</option>
+                    <option value="KS">Kansas</option>
+                    <option value="KY">Kentucky</option>
+                    <option value="LA">Louisiana</option>
+                    <option value="ME">Maine</option>
+                    <option value="MD">Maryland</option>
+                    <option value="MA">Massachusetts</option>
+                    <option value="MI">Michigan</option>
+                    <option value="MN">Minnesota</option>
+                    <option value="MS">Mississippi</option>
+                    <option value="MO">Missouri</option>
+                    <option value="MT">Montana</option>
+                    <option value="NE">Nebraska</option>
+                    <option value="NV">Nevada</option>
+                    <option value="NH">New Hampshire</option>
+                    <option value="NJ">New Jersey</option>
+                    <option value="NM">New Mexico</option>
+                    <option value="NY">New York</option>
+                    <option value="NC">North Carolina</option>
+                    <option value="ND">North Dakota</option>
+                    <option value="OH">Ohio</option>
+                    <option value="OK">Oklahoma</option>
+                    <option value="OR">Oregon</option>
+                    <option value="PA">Pennsylvania</option>
+                    <option value="RI">Rhode Island</option>
+                    <option value="SC">South Carolina</option>
+                    <option value="SD">South Dakota</option>
+                    <option value="TN">Tennessee</option>
+                    <option value="TX">Texas</option>
+                    <option value="UT">Utah</option>
+                    <option value="VT">Vermont</option>
+                    <option value="VA">Virginia</option>
+                    <option value="WA">Washington</option>
+                    <option value="WV">West Virginia</option>
+                    <option value="WI">Wisconsin</option>
+                    <option value="WY">Wyoming</option>
+                </select>
+            </div>
+            <div>
+                <label for="country">Country: </label>
+                <input type="country" id="country" name="country" required>
+            </div>
+            <div>
+                <label for="zipCode">Zip Code: </label>
+                <input type="number" id="zipCode" name="zipCode" required>
+            </div>
+            <div>
+                <label for="comments">Comments: </label>
+                <br>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:100px; width: 400px;"></textarea>
+            </div>
+            <div>
+                <input type="submit" value="Submit" href="thanks.html" class="reservationButton">
+            </div>
+    </main>
+    <footer>
+        <div>
+            &copy; Temple Inn & Suites | <span id="current-date"></span> | Dillon Godwin
+        </div>
+    </footer>
+    <script src="scripts/main.js"></script>
+</body>
+</html>

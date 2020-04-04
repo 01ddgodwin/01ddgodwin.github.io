@@ -1,0 +1,139 @@
+@media only screen and (min-width: 64em) {
+    .title {
+        font-size: 20px;
+        line-height: 10px;
+    }
+
+    .receptionGrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: 2em 2em 2em 2em;
+        text-align: center;
+        grid-gap: 2em;
+    }
+
+    .iframeContact {
+        float: left;
+        box-shadow: 5px 5px 3px #FFDC34;
+        border-radius: 17px;
+        width: 600px;
+    }
+
+    .contactDiv {
+        padding: 3em 5em 10em 5em;
+    }
+    
+    .address {
+        /* margin-left: 100px; */
+        margin-top: 75px;
+    }
+
+    .title p {
+        top: 0.2em;
+    }
+
+    .roomGrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: 2em 2em 5em 2em;
+        text-align: center;
+        list-style-position: outside;
+    }
+
+    .king {
+        grid-column: 1;
+    }
+    
+    .queen {
+        grid-column: 2;
+    }
+    
+    .suite {
+        grid-column: 3;
+    }
+    
+    .templeImg1 {
+        object-fit: cover;
+        object-position: 48% 20%;
+        width: 40%;
+        height: 800px;
+        max-height: 50%;
+        border-radius: 17px;
+        float: right;
+        margin-left: 1em;
+        box-shadow: 5px 5px 3px #FFDC34;
+        filter:contrast(110%);
+        filter:saturate(1.5);
+    }
+
+    .templeImg2 {
+        object-fit: cover;
+        object-position: 48% 20%;
+        width: 40%;
+        height: 800px;
+        max-height: 50%;
+        border-radius: 17px;
+        float: left;
+        margin: 0 10em 16em 0;
+        box-shadow: 5px 5px 3px #FFDC34;
+        filter:contrast(110%);
+        filter:saturate(2);
+    }
+
+    .templeImg3 {
+        object-fit: cover;
+        object-position: 40% 20%;
+        width: 40%;
+        height: 800px;
+        max-height: 50%;
+        border-radius: 17px;
+        float: right;
+        margin-left: 1em;
+        box-shadow: 5px 5px 3px #FFDC34;
+        filter:contrast(200%);
+        filter:saturate(2);
+    }
+
+    .templeImg4 {
+        object-fit: cover;
+        object-position: 50% 20%;
+        width: 40%;
+        height: 800px;
+        max-height: 50%;
+        border-radius: 17px;
+        float: left;
+        margin: 0 10em 16em 0;
+        box-shadow: 5px 5px 3px #FFDC34;
+        filter:contrast(50%);
+        filter:saturate(1.5);
+    }
+
+    #temple1-name {
+        background-color: #4DD599;
+        padding: 1em;
+        width: 33em;
+        border-radius: 17px;
+    }
+
+    #temple2-name {
+        background-color: #4DD599;
+        padding: 1em;
+        width: 41em;
+        border-radius: 17px;
+    }
+
+    #temple3-name {
+        background-color: #4DD599;
+        padding: 1em;
+        width: 33em;
+        border-radius: 17px;
+    }
+
+    #temple4-name {
+        background-color: #4DD599;
+        padding: 1em;
+        width: 41em;
+        border-radius: 17px;
+    }
+
+}

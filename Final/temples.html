@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temples</title>
+    <link rel="shortcut icon" href="images/logo.png">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header></header>
+    <nav>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+            </div>
+            <a href="index.html" class="title"><p>Temple Inn & Suites</p></a>
+        <div class="navbar">
+        
+        <div class="icon-bar" onclick="Show()">
+            <i></i>
+            <i></i>
+            <i></i>
+        </div>
+        
+        <ul id="nav-lists">
+            <li class="close"><span onclick="Hide()">×</span></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Temples</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+            <div class="dropdown" style="float:left;">
+                <button class="dropbtn">Services</button>
+                <div class="dropdown-content" style="left:0;">
+                <a href="receptions.html">Receptions</a>
+                <a href="missionaries.html">Full Time Temple Missionary</a>
+                </div> 
+            </div>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        
+        </div>
+        </div>
+    </nav>
+    <main class="templeSize">
+        <div class="templeStyles">
+            <section class="templeSection1">
+                <img class="templeImg1" src="https://assets.ldscdn.org/c3/df/c3df2226365172dea790d3949fcf1ef14f92bdbd/mesa_temple_reflection.jpg" alt="">
+                <p id="temple1-name"></p>
+                <p>Address: </p>
+                <h3 id="address1"></h3>
+                <p>Phone Number: </p>
+                <h3 id="phone1"></h3>
+                <p>Services: </p>
+                <ul id="services1"></ul>
+                <p>Ordinance Schedule: </p>
+                <h3>Baptism</h3>
+                <ul><li id="baptism1"></li></ul>
+                <h3>Endowment</h3>
+                <ul><li id="endowment1"></li></ul>
+                <h3>Sealing</h3>
+                <ul><li id="sealing1"></li></ul>
+                <p>Closures: </p>
+                <ul id="closures1"></ul>
+                <p>History: </p>
+                <h3 id="history1"></h3>
+                <div class="weatherSummary">
+                    <p>Current Weather</p>
+                    <div>
+                        <img id="weatherImage1" src="" alt=""></img>
+                    </div>
+                    <div>
+                        <span id="weatherDesc1"></span>
+                    </div>
+                    <div>
+                        <span>Current Temperature:</span>
+                        <span id="currentTemp1"></span>
+                    </div>
+                    <div>
+                        <span>Wind Speed:</span>
+                        <span id="windSpeed1"></span>
+                    </div>
+                    <div>
+                        <span>Wind Chill:</span>
+                        <span id="windChill1"></span>
+                    </div>
+                </div>
+            </section>
+            <hr>
+            <section class="templeSection2">
+                <img class="templeImg2" src="https://assets.ldscdn.org/3c/3b/3c3b13349ed034932376cd8a91a42cac2b71c72d/billings_montana_temple.jpeg" alt="">
+                <p id="temple2-name"></p>
+                <p>Address: </p>
+                <h3 id="address2"></h3>
+                <p>Phone Number: </p>
+                <h3 id="phone2"></h3>
+                <p>Services: </p>
+                <ul id="services2"></ul>
+                <p>Ordinance Schedule: </p>
+                <h3>Baptism</h3>
+                <li id="baptism2"></li>
+                <h3>Endowment</h3>
+                <li id="endowment2"></li>
+                <h3>Sealing</h3>
+                <li id="sealing2"></li>
+                <p>Closures: </p>
+                <ul id="closures2"></ul>
+                <p>History: </p>
+                <h3 id="history2"></h3>
+                <div class="weatherSummary">
+                    <p>Current Weather</p>
+                    <div>
+                        <img id="weatherImage2" src="" alt=""></img>
+                    </div>
+                    <div>
+                        <span id="weatherDesc2"></span>
+                    </div>
+                    <div>
+                        <span>Current Temperature:</span>
+                        <span id="currentTemp2"></span>
+                    </div>
+                    <div>
+                        <span>Wind Speed:</span>
+                        <span id="windSpeed2"></span>
+                    </div>
+                    <div>
+                        <span>Wind Chill:</span>
+                        <span id="windChill2"></span>
+                    </div>
+                </div>
+            </section>
+            <hr>
+            <section class="templeSection3">
+                <img class="templeImg3" src="images/londondTemple1.jpg" alt="">
+                <p id="temple3-name"></p>
+                <p>Address: </p>
+                <h3 id="address3"></h3>
+                <p>Phone Number: </p>
+                <h3 id="phone3"></h3>
+                <p>Services: </p>
+                <ul id="services3"></ul>
+                <p>Ordinance Schedule: </p>
+                <h3>Baptism</h3>
+                <ul><li id="baptism3"></li></ul>
+                <h3>Endowment</h3>
+                <ul><li id="endowment3"></li></ul>
+                <h3>Sealing</h3>
+                <ul><li id="sealing3"></li></ul>
+                <p>Closures: </p>
+                <ul id="closures3"></ul>
+                <p>History: </p>
+                <h3 id="history3"></h3>
+                <div class="weatherSummary">
+                    <p>Current Weather</p>
+                    <div>
+                        <img id="weatherImage3" src="" alt=""></img>
+                    </div>
+                    <div>
+                        <span id="weatherDesc3"></span>
+                    </div>
+                    <div>
+                        <span>Current Temperature:</span>
+                        <span id="currentTemp3"></span>
+                    </div>
+                    <div>
+                        <span>Wind Speed:</span>
+                        <span id="windSpeed3"></span>
+                    </div>
+                    <div>
+                        <span>Wind Chill:</span>
+                        <span id="windChill3"></span>
+                    </div>
+                </div>
+            </section>
+            <hr>
+            <section class="templeSection4">
+                <img class="templeImg4" src="https://assets.ldscdn.org/b2/89/b2891eb1787414ec6995a32c42d03981732c2d6a/cedar_city_utah_temple_exterior.jpeg" alt="">
+                <p id="temple4-name"></p>
+                <p>Address: </p>
+                <h3 id="address4"></h3>
+                <p>Phone Number: </p>
+                <h3 id="phone4"></h3>
+                <p>Services: </p>
+                <ul id="services4"></ul>
+                <p>Ordinance Schedule: </p>
+                <h3>Baptism</h3>
+                <li id="baptism4"></li>
+                <h3>Endowment</h3>
+                <li id="endowment4"></li>
+                <h3>Sealing</h3>
+                <li id="sealing4"></li>
+                <p>Closures: </p>
+                <ul id="closures4"></ul>
+                <p>History: </p>
+                <h3 id="history4"></h3>
+                <div class="weatherSummary">
+                    <p>Current Weather</p>
+                    <div>
+                        <img id="weatherImage4" src="" alt=""></img>
+                    </div>
+                    <div>
+                        <span id="weatherDesc4"></span>
+                    </div>
+                    <div>
+                        <span>Current Temperature:</span>
+                        <span id="currentTemp4"></span>
+                    </div>
+                    <div>
+                        <span>Wind Speed:</span>
+                        <span id="windSpeed4"></span>
+                    </div>
+                    <div>
+                        <span>Wind Chill:</span>
+                        <span id="windChill4"></span>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div>
+            &copy; Temple Inn & Suites | <span id="current-date"></span> | Dillon Godwin
+        </div>
+    </footer>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/mesaWeather.js"></script>
+    <script src="scripts/billingsWeather.js"></script>
+    <script src="scripts/londonWeather.js"></script>
+    <script src="scripts/cedarWeather.js"></script>
+</body>
+</html>
