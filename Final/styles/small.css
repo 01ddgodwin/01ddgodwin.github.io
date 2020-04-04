@@ -657,3 +657,12 @@ form div {
     text-align: center;
     padding-bottom: 2em;
 }
+
+/* THANKS */
+
+.thanks {
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+    font-size: 30px;
+    padding: 6em 0 6em 0;
+}
