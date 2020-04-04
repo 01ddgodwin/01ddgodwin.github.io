@@ -28,6 +28,10 @@
         margin-top: 75px;
     }
 
+    hr {
+        margin-top: 5em;
+    }
+
     .container .logo a img {
         position: absolute;
         top: 5px;
@@ -125,7 +129,7 @@
     #temple2-name {
         background-color: #4DD599;
         padding: 1em;
-        width: 41em;
+        width: 54em;
         border-radius: 17px;
     }
 
@@ -139,7 +143,7 @@
     #temple4-name {
         background-color: #4DD599;
         padding: 1em;
-        width: 41em;
+        width: 54em;
         border-radius: 17px;
     }
 
